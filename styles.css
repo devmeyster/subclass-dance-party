@@ -25,3 +25,36 @@ body, a:link, a:visited, a:active{
   border-radius:10px;
   position:absolute;
 }
+
+.blinkyDancer {
+  background-image: url('lib/img/walt.png');
+  background-repeat: no-repeat;
+  height: 50%;
+  width: 50%;
+  border:0;
+  border-radius:0;
+}
+.leg{
+  background-image: url('lib/img/walt-leg.png');
+  background-repeat: no-repeat;
+  height: 50%;
+  width: 50%;
+  border:0;
+  border-radius:0;
+}
+.swingDancer {
+  background-image: url('lib/img/sal.png');
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  border:0;
+  border-radius:0;
+}
+.breakDancer {
+  background-image: url('lib/img/Jesse.jpg');
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  border:0;
+  border-radius:0;
+}
