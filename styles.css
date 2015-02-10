@@ -3,7 +3,9 @@ body, html{
 }
 body{
   margin: 0px;
-  background-color:#444;
+  background-image: url('lib/BB/trailer.png');
+  background-repeat: no-repeat;
+  background-size: cover;
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{
@@ -21,40 +23,44 @@ body, a:link, a:visited, a:active{
   background-color: #777;
 }
 .dancer{
-  border:10px solid red;
-  border-radius:10px;
   position:absolute;
 }
 
-.blinkyDancer {
-  background-image: url('lib/img/walt.png');
-  background-repeat: no-repeat;
-  height: 50%;
-  width: 50%;
-  border:0;
-  border-radius:0;
+.lineup{
+  padding:5px 12px;
+  float:right;
 }
-.leg{
-  background-image: url('lib/img/walt-leg.png');
-  background-repeat: no-repeat;
-  height: 50%;
-  width: 50%;
-  border:0;
-  border-radius:0;
+
+.walt{
+  content: url('lib/BB/walt1.png');
 }
-.swingDancer {
-  background-image: url('lib/img/sal.png');
-  background-repeat: no-repeat;
-  height: 100%;
-  width: 100%;
-  border:0;
-  border-radius:0;
+
+.walt2{
+  content: url('lib/BB/walt2.png');
 }
-.breakDancer {
-  background-image: url('lib/img/Jesse.jpg');
-  background-repeat: no-repeat;
-  height: 100%;
-  width: 100%;
-  border:0;
-  border-radius:0;
+
+.sal{
+  content: url('lib/BB/sal1.png');
+}
+.sal2{
+  content: url('lib/BB/sal2.png');
+}
+
+.jesse{
+  content: url('lib/BB/jesse-1.png');
+}
+.jesse2{
+  content: url('lib/BB/jesse-2.png');
+}
+
+
+.hank{
+  content: url('lib/BB/cop-1.png');
+}
+.hank2{
+  content: url('lib/BB/cop-2.png');
+}
+
+.hank3{
+  content: url('lib/BB/cop.png');
 }

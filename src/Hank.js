@@ -1,0 +1,29 @@
+var Hank = function(top, left, timeBetweenSteps){
+  // var blinkyDancer = makeDancer(top, left, timeBetweenSteps);
+  Dancer.call(this, top, left, timeBetweenSteps);
+  // we plan to overwrite the step function below, but we still want the superclass step behavior to work,
+
+
+  this.$node.addClass('hank');
+};
+
+Hank.prototype = Object.create(Dancer.prototype);
+Hank.prototype.constructor = Hank;
+
+
+Hank.prototype.step = function(){
+  // call the old version of step at the beginning of any call to this new version of step
+  Dancer.prototype.step.call(this);
+
+  // toggle() is a jQuery method to show/hide the <span> tag.
+  // See http://api.jquery.com/category/effects/ for this and
+  // other effects you can use on a jQuery-wrapped html tag.
+  this.$node.toggleClass("hank2");
+};
+
+Walt.prototype.lineup = function(idx) {
+  var fromTop = String((idx+3)*20)+'px';
+  var fromLeft = String((idx+3)*20)+ 'px';
+  $(val).css({'left': fromLeft });
+  $(val).css({'top': fromTop });
+};

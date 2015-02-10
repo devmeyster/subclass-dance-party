@@ -1,5 +1,5 @@
 $(document).ready(function(){
-   ;
+   window.dancers = [];
 
   $(".addDancerButton").on("click", function(event){
     /* This function sets up the click handlers for the create-dancer
@@ -25,9 +25,42 @@ $(document).ready(function(){
     var dancer = new dancerMakerFunction(
       $("body").height() * Math.random(),
       $("body").width() * Math.random(),
-      Math.random() * 1000
+      200
     );
+    window.dancers.push(dancer);
     $('body').append(dancer.$node);
   });
-});
 
+    $('.lineup').on('click', function(){
+      window.dancers.forEach(function(val, idx){
+        var fromTop = String((idx+3)*75)+'px';
+        var fromLeft = String((idx+3)*100)+ 'px';
+        $(val).css({'left': fromLeft });
+        $(val).css({'top': fromTop });
+      });
+    });
+
+
+    });
+//);
+
+
+
+
+// $('.lineup').on('click', function(){
+    //   window.dancers.forEach(function(val, idx){
+    //     debugger;
+    //     val.lineup(idx);
+    //   });
+    // });
+
+
+    // $('.showOff').on('click', function(){
+    //   window.dancers.forEach(function(val, idx){
+    //     if(val.hasClass('hank')){
+    //       var fromTop = String((idx+3)*50)+'px';
+    //       var fromLeft = String((idx+3)*300)+ 'px';
+    //       $(val).css({'left': fromLeft });
+    //       $(val).css({'top': fromTop });
+    //     }
+    //   });
