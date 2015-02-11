@@ -18,12 +18,6 @@ Hank.prototype.step = function(){
   // toggle() is a jQuery method to show/hide the <span> tag.
   // See http://api.jquery.com/category/effects/ for this and
   // other effects you can use on a jQuery-wrapped html tag.
-  this.$node.toggleClass("hank2");
+  this.$node.toggleClass("hank2").addClass('animated infinite pulse zoomInDown');
 };
 
-Walt.prototype.lineup = function(idx) {
-  var fromTop = String((idx+3)*20)+'px';
-  var fromLeft = String((idx+3)*20)+ 'px';
-  $(val).css({'left': fromLeft });
-  $(val).css({'top': fromTop });
-};

@@ -31,6 +31,11 @@ body, a:link, a:visited, a:active{
   float:right;
 }
 
+.otherway{
+  padding:5px 12px;
+  float:right;
+}
+
 .walt{
   content: url('lib/BB/walt1.png');
 }
@@ -48,9 +53,11 @@ body, a:link, a:visited, a:active{
 
 .jesse{
   content: url('lib/BB/jesse-1.png');
+  transform: rotateY(720deg);
 }
 .jesse2{
   content: url('lib/BB/jesse-2.png');
+  transform: rotateY(720deg);
 }
 
 
@@ -63,4 +70,10 @@ body, a:link, a:visited, a:active{
 
 .hank3{
   content: url('lib/BB/cop.png');
+}
+.hector{
+  content: url('lib/BB/wheelchair.png');
+}
+.hector1{
+  content: url('lib/BB/wheelchair1.png');
 }
